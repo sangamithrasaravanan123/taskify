@@ -29,23 +29,24 @@
    ```bash
     cd taskify
 
-3.Install frontend and backend dependencies:
+3. Install frontend and backend dependencies:
+   ```bash
+      cd client
+     npm install
+     cd ../server
+     npm install
+
+4. Add environment variables in .env (backend):
+   ```bash
+      MONGO_URI=your_mongodb_connection_string
+      JWT_SECRET=your_secret_key
+
+5. Run the app:
   ```bash
-  cd client
-   npm install
-  cd ../server
-  npm install
+        Backend:
+       cd server
+       npm run dev
 
-4.Add environment variables in .env (backend):
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-
-Run the app:
-
-Backend:
-cd server
-npm run dev
-
-Frontend:
-cd client
-npm run dev
+        Frontend:
+        cd client
+        npm run dev
